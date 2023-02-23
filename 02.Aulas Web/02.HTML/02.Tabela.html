@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas em HTML5</title>
+    <link rel="icon" type="image/x-icon" href="../Fotos/html.png">
+    <link rel="stylesheet" href="../CSS - Aulas/Aula 01 - CSS.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="Aula 01 - HTML.html">Inicio</a>
+            <a href="Aula 02 - Tabela.html">Estruturas</a>
+            <a href="Aula 03 - Classes, IDS.html">Classes</a>
+            <a href="Aula 04 - Semanticas.html">Semanticas</a>
+        </nav>
+    </header>
+    <hr>
+    <table><!-- Isso cria uma tabela -->
+        <caption>Tabela de Pessoas</caption><!-- Legenda da tabela -->
+        <tr><!-- tr = Table Row - Isso cria uma nova linha (Cabeçalho) -->
+            <th>Nome</th><!-- th = Table Header -->
+            <th>Idade</th>
+            <th>Pais</th>
+            <th colspan="2">Exemplo</th><!-- Mesclagem de duas celular em uma -->
+        </tr>
+        <tr><!-- Isso cria uma nova linha (Corpo da Tabela) -->
+            <td>Fulano</td><!-- td = Table Data -->
+            <td>22 anos</td>
+            <td>Brasil</td>
+            <td>BR</td>
+            <td>PT</td>
+        </tr>
+    </table>
+    <hr>
+    <ul style="list-style-type: disc;"><!-- Isso e uma lista não ordenada -->
+        <li>Café</li><!-- Isso e um objeto da lista -->
+        <li>Azucar</li>
+        <li>Leite</li>
+        <li>Pimente</li>
+        <li>Chá</li>
+        <ul style="list-style-type: disc;"><!-- Esta lista vai ficar como sub-lista da primeira -->
+            <li>Chá Verde</li>
+            <li>Chá Negro</li>
+            <li>Chá de Alho</li>
+        </ul>
+    </ul>
+    <hr>
+    <ol type="" start="1"><!-- Isto e uma lista ordenada (1;A;a;I;i) -->
+        <li>Café</li>
+        <li>Azucar</li>
+        <li>Leite</li>
+        <li>Pimente</li>
+        <li>Chá</li>
+        <ol type="1">
+            <li>Chá Verde</li>
+            <li>Chá Negro</li>
+            <li>Chá de Alho</li>
+        </ol>
+    </ol>
+    <hr>
+    <dl><!-- Isto é uma lista descriptiva -->
+        <dt>Café</dt><!-- Nome do Item -->
+        <dd>Bebida quente e escura</dd><!-- Descrição do Item -->
+        <dt>Leite</dt>
+        <dd>Bebida fria e branca</dd>
+    </dl>
+</body>
+
+</html>

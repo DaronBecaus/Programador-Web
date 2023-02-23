@@ -1,0 +1,33 @@
+.icon-bar {
+    width: 90px;
+    position: absolute;
+    align-self: center;
+    margin: 10px;
+}
+
+.icon img {
+    width: 70px;
+    position: relative;
+    display: block;
+    padding: 8px;
+    transition: all 0.3s ease;
+}
+
+.icon-bar img:hover {
+    background-color: #a6a6a6;
+    border-radius: 100%;
+}
+
+.icon-text {
+    display: none;
+        
+}
+
+a:hover .icon-text {
+    display: block;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}

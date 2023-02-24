@@ -8,6 +8,11 @@ html {
     height: 100%;
 }
 
+body {
+    position: relative;
+    min-height: 100%;
+}
+
 .icon-bar {
     width: 100px;
     position: absolute;
@@ -124,12 +129,7 @@ figcaption {
 }
 
 footer {
+    position: absolute;
+    bottom: 0;
     width: 100%;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #000000;
-    color: #ffffff;
-    box-sizing: border-box;
 }

@@ -119,6 +119,13 @@ figcaption {
     color: black;
 }
 
-footer{
-    background-color: #a6a6a6;
+footer {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+    color: #ffffff;
+    box-sizing: border-box;
 }

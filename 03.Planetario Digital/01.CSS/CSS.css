@@ -49,6 +49,7 @@ a:hover .icon-text {
     border-radius: 20px;
     background-color: #ebedee;
     text-align: center;
+    z-index: +1;
 }
 
 main div {
@@ -83,7 +84,7 @@ p {
 }
 
 .img-1{
-    align-items: center;
+    z-index: -1;
 }
 
 figcaption {

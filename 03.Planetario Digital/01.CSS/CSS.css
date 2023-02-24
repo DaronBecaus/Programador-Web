@@ -52,7 +52,7 @@ a:hover .icon-text {
 }
 
 main div {
-    width: 70%;
+    width: 80%;
     position: relative;
     left: 150px;
     top: 40px;
@@ -69,9 +69,55 @@ main div {
 
 .text {
     text-align: justify;
+    line-height: 20px;
+}
+
+p {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .header-top {
     background-color: #a6a6a6;
     height: 80px;
+}
+
+.img-1{
+    align-items: center;
+}
+
+figcaption {
+    border: black solid 1px;
+    background-color: #ebedee;
+    width: 500px;
+    text-align: center;
+}
+
+.flex-container{
+    background-color: #a6a6a6;
+    display: flex;
+    height: 70px;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.flex-container div > img{
+    padding: 5px;
+}
+
+.flex-container div > a{
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 100px;
+    text-decoration: none;
+    color: black;
+}
+
+footer{
+    background-color: #a6a6a6;
 }

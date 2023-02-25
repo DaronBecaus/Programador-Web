@@ -4,16 +4,6 @@
     margin: 0;
 }
 
-html{
-    height: 100%;
-}
-
-body {
-    position: relative;
-    min-height: 100%;
-    padding-bottom: 5rem;
-}
-
 .icon-bar {
     width: 100px;
     position: absolute;
@@ -87,8 +77,8 @@ p {
     padding-top: 10px;
     padding-bottom: 10px;
 }
-
 .header-top {
+
     background-color: #a6a6a6;
     height: 80px;
 }
@@ -138,7 +128,5 @@ footer {
     background: #000000;
     color: #ffffff;
     box-sizing: border-box;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    padding-top: 5rem;
 }

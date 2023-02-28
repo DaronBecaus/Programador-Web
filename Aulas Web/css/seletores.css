@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    margin: 1rem;
+}
+
+#pai p { /* seleciona todos os descendentes do pai e deixa a letra azul */
+    color: blue;
+}
+
+#pai > p { /* seleciona os filhos e deixa com fundo marrom  */
+    background-color: brown;
+}
+
+#pai + p{ /* seleciona o primeiro irmão(tio) e coloca borda */
+    border: 1px solid black;
+}
+
+#pai ~ p { /* seleciona todos os irmãos(tios) e coloca sublinhado */
+    text-decoration: underline;
+}

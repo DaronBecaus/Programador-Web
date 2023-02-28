@@ -23,3 +23,20 @@ main {
 #pai ~ p { /* seleciona todos os irmãos(tios) e coloca sublinhado */
     text-decoration: underline;
 }
+
+hr {
+    
+}
+
+a:visited {
+    color: yellow;
+}
+
+a:hover {
+    font-size: 100px;
+}
+
+p.mod::first-letter {
+    font-size: 40px;
+    color: red;
+}

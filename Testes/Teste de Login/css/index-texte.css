@@ -23,6 +23,11 @@ body {
     display: flex;
     flex-direction: column;
     padding: 0 15px 0 15px;
+    border-radius: 30px;
+    border: 1px solid white;
+    padding-bottom: 1rem;
+    background: transparent;
+    backdrop-filter: blur(15px);
 }
 
 span {

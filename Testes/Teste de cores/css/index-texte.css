@@ -1,19 +1,101 @@
 * {
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
 body {
-    background-image: linear-gradient(to left, #264F73,#2B558C,#79ACD9);
+    background-image: linear-gradient(to left,#2B558C,#79ACD9);
 }
 
-.img {
-    background-image: url(../img/pexels-roberto-nickson-2559941.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.40;
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+
+.container {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px 0 15px;
+}
+
+span {
+    color: white;
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+}
+
+header {
+    color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;   
+}
+
+.material-symbols-outlined {
+    position: relative;
+    top: -45px;
+    left: 17px;
+    color: white;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    height: 45px;
     width: 100%;
-    height: 100vh;  
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    color: white;
+    padding: 0 0 0 42px;
+    background-color: rgba(250, 250, 250, 0.1);
+}
+
+::-webkit-input-placeholder {
+    color: white;
+}
+
+.submit {
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    height: 45px;
+    outline: none;
+    width: 100%;
+    background-color:  rgba(250, 250, 250, 0.7);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.submit:hover {
+    box-shadow: 1px 5px 7 1px rgba(0, 0, 0, 0.2);
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: small;
+    color: white;
+    margin-top: 10px;
+}
+
+.left {
+    display: flex;
+}
+
+label a {
+    color: white;
+    text-decoration: none;
 }

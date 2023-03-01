@@ -19,18 +19,21 @@
 
 <body>
     <form action="" autocomplete    ="off">
-        <div class="icon-name">
-            <label for="nome" class="icon-name"><span class="material-symbols-outlined">person</span>Nome:</label>
-            <input type="text" name="nome" id="nome" placeholder="Seu Nome" required>
-        </div>
-        <div class="icon-name">
-            <label for="senha" class="icon-name"><span class="material-symbols-outlined">lock</span>Senha:</label>
-            <input type="password" name="senha" id="senha" placeholder="Sua Senha" required>
-        </div>
-        <div class="icon-name">
-            <label for="numero" class="icon-name"><span class="material-symbols-outlined">123</span>Numero:</label>
-            <input type="number" name="numero" id="numero" placeholder="Um Numero" required>
-        </div>
+        <fieldset>
+            <Legend>Dados Pessoais</Legend>
+            <div class="icon-name">
+                <label for="nome" class="icon-name"><span class="material-symbols-outlined">person</span>Nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="Seu Nome" required>
+            </div>
+            <div class="icon-name">
+                <label for="senha" class="icon-name"><span class="material-symbols-outlined">lock</span>Senha:</label>
+                <input type="password" name="senha" id="senha" placeholder="Sua Senha" required>
+            </div>
+            <div class="icon-name">
+                <label for="numero" class="icon-name"><span class="material-symbols-outlined">123</span>Numero:</label>
+                <input type="number" name="numero" id="numero" placeholder="Um Numero" required>
+            </div>
+        </fieldset>
         
         <div style="display: flex; flex-direction: column;">
             <div>
@@ -67,6 +70,11 @@
         <div>
             <label for="descricao">Descrição</label>
             <textarea name="descricao" id="descricao" cols="30" rows="10" placeholder="Descrição"></textarea>
+        </div>
+
+        <div>
+            <label for="cor">Sua Cor Favorita</label>
+            <input type="color" name="cor" id="cor">
         </div>
 
         <input type="submit" value="Enviar">

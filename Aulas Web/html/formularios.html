@@ -31,7 +31,7 @@
             </div>
             <div class="icon-name">
                 <label for="numero" class="icon-name"><span class="material-symbols-outlined">123</span>Numero:</label>
-                <input type="number" name="numero" id="numero" placeholder="Um Numero" required>
+                <input type="number" name="numero" id="numero" placeholder="Um Numero" required step="1">
             </div>
         </fieldset>
         
@@ -84,7 +84,16 @@
 
         <div>
             <label for="email">E-mail</label>
-            <input type="email" name="email" id="email">
+            <input type="email" name="email" id="email" placeholder="Coloque seu E-mail">
+        </div>
+
+        <div>
+            <label for="arquivo">Envie Seu Currículo</label>
+            <input type="file" name="arquivo" id="arquivo" multiple>
+        </div>
+        
+        <div>
+            <input type="hidden" name="id" value="">
         </div>
 
         <input type="submit" value="Enviar">

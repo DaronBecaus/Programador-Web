@@ -18,7 +18,7 @@
 <!-- <required> indica que o usuário deve especificar um valor para a entrada antes que o formulário proprietário possa ser enviado -->
 
 <body>
-    <form action="" autocomplete    ="off">
+    <form action="" autocomplete="off" method="">
         <fieldset>
             <Legend>Dados Pessoais</Legend>
             <div class="icon-name">
@@ -99,6 +99,10 @@
         <div style="display: flex; align-items: center;">
             <input type="search" name="busca" id="busca">
             <span class="material-symbols-outlined">search</span>
+        </div>
+
+        <div>
+            <input type="reset" value="Limpar">
         </div>
 
         <input type="submit" value="Enviar">

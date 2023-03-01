@@ -27,7 +27,7 @@ body {
     padding-bottom: 1rem;
     background: transparent;
     backdrop-filter: blur(15px);
-    cursor: pointer;
+    cursor: default;
     transition: .3s;
 }
 
@@ -66,7 +66,7 @@ header {
     color: white;
     padding: 0 0 0 42px;
     background: rgba(250, 250, 250, 0.2);
-    cursor: pointer;
+    cursor: text;
     transition: .3s;
 }
 

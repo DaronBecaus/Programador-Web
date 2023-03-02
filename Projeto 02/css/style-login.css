@@ -118,3 +118,11 @@ label a {
     color: white;
     text-decoration: none;
 }
+
+.center a {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    left: 18%;
+}

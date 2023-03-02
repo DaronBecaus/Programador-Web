@@ -3,7 +3,10 @@
 }
 
 body {
-    /* background-image: linear-gradient(to left,#2B558C,#79ACD9); */
+    background-image: linear-gradient(to left,#2B558C,#79ACD9);
+}
+
+.img {
     background-image: url(../img/706431.jpg);
     background-size: cover;
     background-repeat: no-repeat;

@@ -37,5 +37,18 @@ programa {
     escreva("É menor que 5 \n")  
   }
 
+  inteiro numero
+escreva("escolha uma opção: ")
+leia(numero)
+escolha(numero) {
+  caso 1:
+  escreva("escolha 1")
+  pare
+  caso 2:
+  escreva("escolha 2")
+  pare
+  caso contrario:
+  escreva("escolha invalida")
+}
   
 }

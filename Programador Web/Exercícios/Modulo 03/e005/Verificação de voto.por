@@ -4,15 +4,15 @@ programa {
     escreva("Digite sua idade: ")
     leia(n)
     se(n >= 16 e n <= 17) {
-      escreva("O voto é opcional \n")
+      escreva("O voto ï¿½ opcional \n")
     } senao se(n >= 18 e n <= 69) {
-      escreva("O voto é obrigatorio \n")
+      escreva("O voto ï¿½ obrigatÃ³rio \n")
     } senao se(n >= 70 e n <=125) {
-      escreva("O voto não é obrigatorio \n")
+      escreva("O voto nï¿½o ï¿½ obrigatÃ³rio \n")
     } senao se(n >= 126) {
-      escreva("Você é imoral?")
+      escreva("Vocï¿½ ï¿½ imoral?")
     } senao {
-      escreva("Você não pode votar ainda!")
+      escreva("Vocï¿½ nï¿½o pode votar ainda!")
     }
   }
 }

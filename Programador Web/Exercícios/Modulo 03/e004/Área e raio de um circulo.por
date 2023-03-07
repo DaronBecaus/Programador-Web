@@ -4,18 +4,18 @@ programa {
     inteiro n
     const real pi = 3.14
     real r, a
-    escreva("Selecione o que deseja calcular: \n 1. Área de uma circunferencia. \n 2. Raio de uma circunferencia \n")
+    escreva("Selecione o que deseja calcular: \n 1. ï¿½rea de uma circunferÃªncia. \n 2. Raio de uma circunferÃªncia \n")
     leia(n)
     escolha (n) {
       caso 1:
-      escreva("Digite o raio da circunferencia: ")
+      escreva("Digite o raio da circunferÃªncia: ")
       leia(r)
-      escreva("A área de sua circunferencia com raio ", r, " é: ", pi*r*r)
+      escreva("A ï¿½rea de sua circunferÃªncia com raio ", r, " ï¿½: ", pi*r*r)
       pare
       caso 2:
-      escreva("Digite o área da circunferencia: ")
+      escreva("Digite o ï¿½rea da circunferÃªncia: ")
       leia(a)
-      escreva("O raio de sua circunferencia com área ", a, " é: ", mate.raiz(a/pi, 2))
+      escreva("O raio de sua circunferÃªncia com ï¿½rea ", a, " ï¿½: ", mate.raiz(a/pi, 2))
       pare
       caso contrario:
       escreva("Valor invalido!")

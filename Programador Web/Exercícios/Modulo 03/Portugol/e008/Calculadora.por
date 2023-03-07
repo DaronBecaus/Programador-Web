@@ -10,15 +10,19 @@ programa {
   leia(y)
   escolha (n) {
     caso 1:
+    escreva("Opção selecionada = Adição \n")
     escreva(x, " + ", y, " = ", x + y)
     pare
     caso 2:
+    escreva("Opção selecionada = Subtração \n")
     escreva(x, " - ", y, " = ", x - y)
     pare
     caso 3:
+    escreva("Opção selecionada = Multiplicação \n")
     escreva(x, " x ", y, " = ", x * y)
     pare
     caso 4:
+    escreva("Opção selecionada = Divição \n")
     escreva(x, " / ", y, " = ", x / y)
     pare
     caso contrario:

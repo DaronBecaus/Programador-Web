@@ -23,8 +23,8 @@ if (idade >= 18 && idade < 70) {
     console.log("Você não pode votar ainda!")
 } */
 
-let favoriteColor = "red"
-        
+/* let favoriteColor = "red"
+
 switch (favoriteColor) {
   case "red":
     console.log("Your favorite color is red");
@@ -34,4 +34,15 @@ switch (favoriteColor) {
     break;
   default:
     console.log("Invalid Color");
+}
+
+for(let i = 0; i < 10; i++){
+    console.log(i)
+} */
+
+let verdade = false
+
+while (verdade < 10){
+    console.log("Oi")
+    verdade++
 }

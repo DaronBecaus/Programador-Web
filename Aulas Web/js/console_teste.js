@@ -73,3 +73,6 @@ console.log(nome.toLocaleUpperCase())
 console.log(nome.length)
 console.log(nome.slice(0,2))
 console.log(nome[0])
+
+let frase = "Hello World"
+console.log(frase.replace("World", "peoples"))

@@ -68,7 +68,7 @@ digaOi() */
 let valor = multiplica(2,4)
 console.log(valor) */
 
-let nome = "fellipe"
+let nome = "fellies"
 console.log(nome.toLocaleUpperCase())
 console.log(nome.length)
 console.log(nome.slice(0,2))

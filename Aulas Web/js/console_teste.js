@@ -79,11 +79,11 @@ let frase = "Hello World";
 console.log(frase.replace("World", "peoples")); //substitui uma string por outra
 
 let numero = "10";
-let valor = 12;
+let valor1 = 12;
 let preco = 13.343535;
 
 console.log(typeof numero); //função geral para verificar o tipo de uma variável
-console.log(valor.toString()); //converte o valor de uma variável para tipo string
+console.log(valor1.toString()); //converte o valor de uma variável para tipo string
 console.log(preco.toFixed(2)); //exibe até uma quantidade definida de casas decimais
 console.log(numero.valueOf()); //retornar (se possível) o valor numérico em uma string NaN
 console.log(Number(numero)); //converte um tipo string (se possível) em um tipo Number

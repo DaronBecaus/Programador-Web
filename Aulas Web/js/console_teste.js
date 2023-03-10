@@ -127,13 +127,18 @@ setInterval(() => {
 
 //neste exemplo crio uma função normal
 
-function msg(){
+function msg() {
   console.log("Essa mensagem aparece a cada 2 segundos");
 }
-setInterval(msg, 2000)
+setInterval(msg, 2000);
 
 //nesse exemplo crio uma função anonima
 
-setInterval(function(){
+setInterval(function () {
   console.log("Essa mensagem aparece a cada 2 segundos");
-}, 2000)
+}, 2000);
+
+const pessoa = { nome: "José", sobrenome: "Sousa", idade: 49 }; //array associativo "chave:valor"
+console.log(pessoa.nome);
+
+

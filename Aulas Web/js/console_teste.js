@@ -76,7 +76,7 @@ console.log(nome.slice(0, 2)); //recorte
 console.log(nome[0]); //retorna o valor pela posição (usada em arrays, strings são tratadas como arrays)
 
 let frase = "Hello World";
-console.log(frase.replace("World", "peoples")); //substitui uma string por outra */
+console.log(frase.replace("World", "peoples")); //substitui uma string por outra
 
 let numero = "10";
 let valor = 12;
@@ -85,3 +85,55 @@ let preco = 13.343535;
 console.log(typeof numero); //função geral para verificar o tipo de uma variável
 console.log(valor.toString()); //converte o valor de uma variável para tipo string
 console.log(preco.toFixed(2)); //exibe até uma quantidade definida de casas decimais
+console.log(numero.valueOf()); //retornar (se possível) o valor numérico em uma string NaN
+console.log(Number(numero)); //converte um tipo string (se possível) em um tipo Number
+ */
+
+//arrays
+const carros = ["fusca", "bmw", "corolla"]; //criando um array
+//ou
+const frutas = new Array("maça", "laranja", "banana");
+const teste = new Array(1, 4, 100); //array com valores (tres elementos para uma lista)
+const teste1 = new Array(100); //uma lista com cem elemento ainda por definir
+console.log(carros[0]); //acessando elementos do array (indices começam em 0)
+carros[0] = "marea"; //mudando valores
+console.log(carros[0]);
+
+frutas.push("limão"); //adiciona novo elemento em frutas
+console.log(frutas);
+
+frutas.pop(); //remove o ultimo elemento
+console.log(frutas);
+
+console.log(carros.length); //tamanho do array
+console.log(carros.sort()); //ordena o array
+
+for (let i = 0; i < frutas.length; i++) {
+  //exibindo os elementos or linha
+  console.log(frutas[i]);
+}
+//ou
+frutas.forEach((element) => {
+  console.log(element);
+});
+
+//executa algo em determinado tempo (em milissegundos)
+//setInterval (função call-back, tempo)
+//neste exemplo crio um 'arrow function'
+
+setInterval(() => {
+  console.log("Essa mensagem aparece a cada 2 segundos");
+}, 2000);
+
+//neste exemplo crio uma função normal
+
+function msg(){
+  console.log("Essa mensagem aparece a cada 2 segundos");
+}
+setInterval(msg, 2000)
+
+//nesse exemplo crio uma função anonima
+
+setInterval(function(){
+  console.log("Essa mensagem aparece a cada 2 segundos");
+}, 2000)

@@ -1,4 +1,4 @@
-/* var nome = window.prompt("Qual seu nome?");
+var nome = window.prompt("Qual seu nome?");
 console.log("Prazer, " + nome);
 console.log(`Prazer, ${nome}`);
 
@@ -87,7 +87,7 @@ console.log(valor.toString()); //converte o valor de uma variável para tipo str
 console.log(preco.toFixed(2)); //exibe até uma quantidade definida de casas decimais
 console.log(numero.valueOf()); //retornar (se possível) o valor numérico em uma string NaN
 console.log(Number(numero)); //converte um tipo string (se possível) em um tipo Number
- */
+
 
 //arrays
 const carros = ["fusca", "bmw", "corolla"]; //criando um array

@@ -68,11 +68,12 @@ digaOi() */
 let valor = multiplica(2,4)
 console.log(valor) */
 
+// algumas funções internas de js para manipular Strings
 let nome = "fellies"
-console.log(nome.toLocaleUpperCase())
-console.log(nome.length)
-console.log(nome.slice(0,2))
-console.log(nome[0])
+console.log(nome.toLocaleUpperCase()) //todas maiúsculas, função oposta = toLowerCase()
+console.log(nome.length) //comprimento da string (também usada em arrays)
+console.log(nome.slice(0,2)) //recorte
+console.log(nome[0]) //retorna o valor pela posição (usada em arrays, strings são tratadas como arrays)
 
 let frase = "Hello World"
-console.log(frase.replace("World", "peoples"))
+console.log(frase.replace("World", "peoples")) //substitui uma string por outra

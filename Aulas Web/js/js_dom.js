@@ -3,12 +3,12 @@ document.getElementById("exibir").innerHTML = "Olá Mundo"
 //seleciona e altera uma configuração de estilo (css)
 document.getElementById("exibir").style.color = "red";
 //seleciona e salva o elemento do DOM na variável
-let divExibe = document.getElementById("exibir")
+let divExibir = document.getElementById("exibir")
+divExibir.style.backgroundColor = "green"
 //utiliza a variável para fazer as modificações no elemento
-divExibe.style.backgroundColor = "green"
 
 //seleciona o elemento com id = bem-vindo e salva na variável bemVindo
-let bemVindo = document.getElementById("bem-vindo");
+let bemVindo = document.getElementById("bemVindo");
 //exibe um prompt perguntando qual o nome e salva o valor na variável nome
 let nome = window.prompt("Qual é seu nome?")
 //modifica o elemento bem-vindo para seu conteúdo apresentar a frase "Olá, valor_variável_nome"
@@ -24,4 +24,6 @@ let novo = document.createElement('div')
 novo.innerHTML = "eu sou o novo elemento"
 document.body.appendChild(novo)
 
-divExibe.removeChild(divExibe.firstChild)
+/* divExibir.removeChild(divExibir.firstChild) */
+// deixa de exibir uma tag do html
+

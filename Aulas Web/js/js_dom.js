@@ -23,8 +23,8 @@ let novo = document.createElement("div");
 novo.innerHTML = "eu sou o novo elemento";
 document.body.appendChild(novo);
 
-/* divExibir.removeChild(divExibir.firstChild) */
 // deixa de exibir uma tag do html
+/* divExibir.removeChild(divExibir.firstChild) */
 
 function trocaCor() {
   document.getElementById("hover").style.backgroundColor = "red";
@@ -33,3 +33,10 @@ function trocaCor() {
 function voltaCor() {
   document.getElementById("hover").style.backgroundColor = "blueviolet";
 }
+
+let btnClick = document.getElementById("btnClick");
+btnClick.addEventListener("click", () => {
+  window.alert("Você Clicou");
+});
+
+document.getElementById("imgBrowser").src = "../img/html.png";

@@ -40,3 +40,22 @@ btnClick.addEventListener("click", () => {
 });
 
 document.getElementById("imgBrowser").src = "../img/html.png";
+
+let inptNome = document.getElementById("nome");
+inptNome.addEventListener("input", () => {
+  if (inptNome.value.match(/\d/) || inptNome.value.match(/\W/)) {
+    inptNome.style.backgroundColor = "red";
+  } else if (inptNome.value == "") {
+    inptNome.style.backgroundColor = "initial";
+  } else {
+    inptNome.style.backgroundColor = "green";
+  }
+});
+
+let form1 = document.getElementById("form1")
+form1.addEventListener("submit", (event) => {
+    if (inptNome.value == ""){
+        window.alert("Campo obrigatório vazio!")
+        event.preventDefault()
+    }
+});

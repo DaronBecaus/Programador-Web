@@ -88,7 +88,6 @@ console.log(preco.toFixed(2)); //exibe até uma quantidade definida de casas dec
 console.log(numero.valueOf()); //retornar (se possível) o valor numérico em uma string NaN
 console.log(Number(numero)); //converte um tipo string (se possível) em um tipo Number
 
-
 //arrays
 const carros = ["fusca", "bmw", "corolla"]; //criando um array
 //ou
@@ -140,5 +139,3 @@ setInterval(function () {
 
 const pessoa = { nome: "José", sobrenome: "Sousa", idade: 49 }; //array associativo "chave:valor"
 console.log(pessoa.nome);
-
-

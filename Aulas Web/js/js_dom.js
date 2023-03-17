@@ -52,10 +52,10 @@ inptNome.addEventListener("input", () => {
   }
 });
 
-let form1 = document.getElementById("form1")
+let form1 = document.getElementById("form1");
 form1.addEventListener("submit", (event) => {
-    if (inptNome.value == ""){
-        window.alert("Campo obrigatório vazio!")
-        event.preventDefault()
-    }
+  if (inptNome.value == "") {
+    window.alert("Campo obrigatório vazio!");
+    event.preventDefault();
+  }
 });

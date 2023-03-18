@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); /* importa a fonte do google */
+
+* {
+    padding: 0; /* remove o espacamento interno padrao de todos os elementos */
+    margin: 0; /* remove a margem padrao de todos os elementos */
+    box-sizing: border-box; /* calcula os tamanhos de forma mais precisa e automatica */
+    font-family: 'Roboto', sans-serif; /* define a fonte padrao para todos os elemntos */
+    color: white; /* define a cor da fonte padrao para todos os elementos */
+}
+
+body {
+    min-height: 100vh; /* defino a altura minima do body para 100% do viewport (tela) */
+    background-image: url('img/vistaaerea.jpg'); /* seleciona a img de fundo */
+    background-repeat: no-repeat; /* sem repeticao de fundo */
+    background-position: center; /* posiciona a img de fundo no centro */
+    background-size: cover; /* mando ela cobrir todo o fundo disponivel */
+}
+
+header {
+    display: flex; /* o header se torna um flexbox */
+    flex-wrap: wrap; /* envelopo os elementos dependendo do espaço disponivel de tela */
+    justify-content: flex-end; /* coloco os elementos no final do flex */
+    background-color: darkgoldenrod; /* cor de fundo do header */
+}
+
+nav {
+    display: flex; /* o nav se torna um flexbox */
+    padding: 0.5rem; /* espacamento interno */
+}
+
+nav a {
+    margin: 0 1rem; /* os links dentro de uma estrutura nav terao margens laterais */
+}
+
+nav span:hover { /* quando o mouse passa em cima do span do nav */
+    background-color: white; /* cor do fundo */
+    color: darkgoldenrod; /* cor da letra */
+}
+
+a {
+    text-decoration: none; /* tirei o sublinhado de todos os links */
+}
+
+.alinha-icon { /* todos com essa classe */
+    display: flex; /* se tornam flexbox */
+    align-items: center; /* e alinham sua altura no centro */
+}
+
+.form-item { /* todos com essa classe */
+    margin: 1rem; /* ganham margem em todos os lados */
+    display: flex; /* se tornam flexbox */
+    justify-content: center; /* alinham-se na largura ao centro */
+    flex-grow: 1; /* crescem para ocupar o espaco disponivel */
+}
+
+section { /* todas as section */
+    display: flex; /* se tornam flexbox */
+    justify-content: center; /* alinham-se na largura ao centro */
+    width: 100%; /* ocupam a largura 100% disponivel */
+    position: absolute; /* posicao absoluta  */
+    top: 50%; /* se distancia 50% do topo em relacao ao canto da estrutura */
+    translate: 0 -50%; /* ajusta em relacao a estrutura como um todo */
+    
+}
+
+.forms { /* todos com essa classe */
+    margin: 1rem; /* ganham margem em todos os lados */
+    background-color: darkgoldenrod; /* pegam essa cor de fundo */
+    padding: 1rem; /* ganham espacamento interno */
+    display: flex; /* se tornam flexbox */
+    justify-content: center; /* alinham-se na largura ao centro */
+    box-shadow: 10px 10px 10px 0px black; /* ganham uma sombra em forma de caixa */
+    border-radius: 10px; /* e ficam com os cantos arredondados */
+}
+
+input, option, select { /* todos os tipos de input, as options e o select */
+    padding: 0.5rem; /* ganham espacamento interno */
+    color: black; /* ficam com a cor da fonte preta */
+    border-radius: 10px; /* ficam com cantos arredondados */
+}
+
+label { /* todos os labels */
+    margin: 0 0.5rem; /* ganham margens laterais */
+}
+
+fieldset { /* todos os fieldsets */
+    margin: 1rem; /* ganham uma margem */
+}
+
+button { /* todos os buttons padrao*/
+    padding: 0.5rem; /* espacamento interno */
+    background-color: rgba(128, 128, 128, 0.5); /* cor de fundo */
+    border-radius: 10px; /* arredondados */
+    cursor: pointer; /* muda a relacao com o mouse, para aparecer a mao */
+    margin: 0 1rem; /* ganha margens laterais */
+    box-shadow: 3px 3px 0px 0px black; /* ganha uma sombra */
+    transition: 0.5s; /* tempo de transicao entre as mudanças de estilo */
+}
+
+button:hover { /* quando coloca o mouse sobre os botoes padrao */
+    background-color: rgba(128, 128, 128); /* o fundo muda de cor */
+    box-shadow: 6px 6px 0px 0px black; /* e a sombra aumenta */
+}
+
+.btn-success { /* todos com essa classe (botao estilizado) */
+    background-color: rgba(0, 128, 0, 0.5); /* ficam com essa cor de fundo */
+}
+
+.btn-success:hover { /* se colocar o mouse sobre esse elemento */
+    background-color: green; /* a cor de fundo muda */
+}
+
+#btn-entrar{ /* esse botao especifico */
+    display: flex; /* se torna flexbox */
+    justify-content: center; /* alinha na largura ao centro */
+}
+
+.nome-sobre{ /* o container com essa classe */
+    display: flex; /* se torna flexbox */
+    justify-content: space-evenly; /* distribui o espacamento igualmente */
+}
+
+#endereco, #nome, #sobrenome { /* todos esses itens em especifico */
+    width: 100%; /* ocupam toda a largura disponivel */
+}
+
+#genero { /* esse item especifico */
+    display: flex; /* se torna flexbox */
+    flex-direction: column; /* na direçao coluna */
+    padding: 0.5rem; /* e ganha espacamento interno */
+}
+
+.material-symbols-outlined { /* o icones do google */
+    margin: 0 0.5rem; /* ganham margens laterais */
+}
+
+@media screen and (max-width: 600px){ /* para telas ate largura 600px */
+    .nome-sobre { /* a exibicao dos elementos com essa classe */
+        flex-direction: column; /* muda para coluna */
+    }
+
+    section { /* todas sections */
+        position: initial; /* voltam para o position original */
+        translate: 0 0; /* se posicionam no ponto 0 0  */
+        width: auto; /* e ficam com largura automatica */
+    }
+
+    .form-item { /* todos os itens com essa classe */
+        justify-content: space-between; /* alinham-se com espacamento entre eles */
+    }
+
+    #endereco, #nome, #sobrenome { /* todos esses itens especificos */
+        width: auto; /* ficam com largura automatica */
+    }
+}

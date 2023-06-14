@@ -1,7 +1,7 @@
 <?php
-require_once "cabecalho.php";
+require_once "header.php";
 
-/* criando um array de arrays e salvando na variavel lista */
+/* criando um array de arrays e salvando na variável lista */
 $lista = array(
     //cada array representa um produto
     //os arrays aqui sao associativos (pares de chave e valor)
@@ -10,27 +10,27 @@ $lista = array(
     // podemos associar isso ao resultado de uma busca no banco de dados
     array("img" => "img/coracao.webp", "texto" => "coracao"),
     array("img" => "img/pic_bulboff.gif", "texto" => "luz apagada")
-    
+
 )
-// agora a variavel lista contem os valores referentes aos produtos
+// agora a variável lista contem os valores referentes aos produtos
 ?>
 <!-- agora podemos utilizar o foreach para iterar sobre cada item do array e fazermos o que quiser com ele como por exemplo exibi-los de forma personalizada -->
-<!-- dentro do foreach eu passo a variavel que representa o array ($lista) e itero cada item me referindo a ele como $item (variavel local criada para esse proposito apenas) -->
+<!-- dentro do foreach eu passo a variável que representa o array ($lista) e itero cada item me referindo a ele como $item (variavel local criada para esse proposito apenas) -->
 <div class="container-cards">
     <?php foreach ($lista as $item) : ?>
-        <!-- crio uma estrutura de exibicao dos dados (nesse caso um card) -->
+        <!-- crio uma estrutura de exibição dos dados (nesse caso um card) -->
         <div class="card">
             <div class="imgCard">
-                <!-- dinamicamente eu preencho a cada iteração os valores da tag img com o valor do item atual na chave ['img']. pense que esse seria o titulo da coluna da tabela no banco de dados que armazena os dados da imagem do produto da iteracao atual -->
+                <!-- dinamicamente eu preencho a cada iteração os valores da tag img com o valor do item atual na chave ['img']. pense que esse seria o titulo da coluna da tabela no banco de dados que armazena os dados da imagem do produto da iteração atual -->
                 <img src="<?= $item["img"] ?>" alt="">
             </div>
             <div class="texto">
-                <!-- o mesmo eh feito a cada iteracao para alocar dinamicamente o texto do produto -->
+                <!-- o mesmo eh feito a cada iteração para alocar dinamicamente o texto do produto -->
                 <?= $item["texto"] ?>
             </div>
         </div>
     <?php endforeach; ?><!-- preciso encerrar o foreach -->
 </div>
 <?php
-require_once "rodape.php";
+require_once "footer.php";
 ?>

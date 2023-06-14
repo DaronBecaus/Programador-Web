@@ -1,9 +1,10 @@
 <?php
-require_once "cabecalho.php";
+require_once "header.php";
 ?>
+
 <?php
-$validacao = true;
-if($validacao){
+$validation = true;
+if ($validation) {
     echo "<p> essa eh minha pagina sobre </p>";
 } else {
     echo "<p> Faça login </p>";
@@ -11,5 +12,5 @@ if($validacao){
 ?>
 
 <?php
-require_once "rodape.php";
+require_once "footer.php";
 ?>

@@ -1,5 +1,5 @@
 <?php
-require_once "cabecalho.php";
+require_once "header.php";
 ?>
 
 Ola mundo <!-- esse vem do html -->
@@ -7,15 +7,15 @@ Ola mundo <!-- esse vem do html -->
 
 <?php
 echo "Ola mundo"; // esse vem do php
-// isso eh um comentario em php
+// isso eh um comentário em php
 echo "<br>"; // imprimindo na tela uma tag html usando php
 
-$nome; //assim criamos variaveis em php
+$nome; //assim criamos variáveis em php
 $nome = "Fellipe"; //atribuindo um valor
 echo $nome;
 echo "<br>";
 
-//algumas funcoes internas para strings
+//algumas funções internas para strings
 
 echo strlen($nome); //retorna o tamanho da string
 echo "<br>";
@@ -26,7 +26,7 @@ echo "<br>";
 echo str_replace("Mundo", "Pessoas", "Ola Mundo"); //substitui uma string
 echo "<br>";
 
-// algumas funcoes internas para numeros
+// algumas funções internas para números
 
 $numero = 1;
 $num = 3.14;
@@ -59,7 +59,7 @@ echo "<br>";
 echo round(0.8); //arredonda
 echo "<br>";
 
-echo rand(); //retorna um valor aleatorio, para limitar a abrangencia dos valores colocamos parametros nos parenteses
+echo rand(); //retorna um valor aleatório, para limitar a abrangência dos valores colocamos parâmetros nos parenteses
 echo "<br>";
 
 echo rand(1, 10);
@@ -67,9 +67,8 @@ echo "<br>";
 
 $valor = 3.123124124124;
 echo number_format($valor, 2); // formato um numero
-
 ?>
 
 <?php
-require_once "rodape.php";
+require_once "footer.php";
 ?>

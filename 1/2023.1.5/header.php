@@ -21,11 +21,11 @@ $nome_usr = "Fellipe";
             <a href="index.php">Inicio</a>
             <a href="sobre.php">Sobre</a>
             <a href="produtos.php">Produtos</a>
-            <a href="admin.php">Admin</a> <!--  -->
+            <a href="admin.php">Admin</a>
             <?php if ($login) : ?> <!-- testa se o login é verdadeiro -->
-                <a href="">Ola, <?php echo $nome_usr; ?><span class="material-symbols-outlined">person</span></a> <!-- se sim exibe o nome do usuario e o icone person -->
-            <?php else : ?> <!-- senao -->
-                <a href=""><span class="material-symbols-outlined">login</span></a> <!-- exibe o icone de login -->
+                <a href="">Ola, <?php echo $nome_usr; ?><span class="material-symbols-outlined">person</span></a> <!-- se sim exibe o nome do usuário e o ícone person -->
+            <?php else : ?> <!-- senão -->
+                <a href=""><span class="material-symbols-outlined">login</span></a> <!-- exibe o ícone de login -->
             <?php endif; ?> <!-- encerra o if -->
         </nav>
     </header>
